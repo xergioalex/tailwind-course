@@ -152,3 +152,7 @@ module.exports = {
 ```
 
 Este plugin llega a resolver el problema integrando la clase ‘aspect’ que nos permite establecer un aspect ratio de manera fija para nuestros elementos. Para conocer más acerca de esto te dejó los links de la documentación oficial de Tailwind.
+
+
+# Tailwind como API para la creación de un Design System
+
