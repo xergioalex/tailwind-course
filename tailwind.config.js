@@ -4,7 +4,7 @@ module.exports = {
     './public/index.html',
     './src/**/*.{html,js}'
   ],
-  darkMode: false,
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -15,7 +15,7 @@ module.exports = {
         secondary: "#8FA206",
         tertiary: "#61AEC9",
       },
-      extend: {
+      backgroundImage: {
         sanFrancisco: "url('../img/sanFrancisco.jpg')",
         sanFranciscoDesktop: "url('../img/sanFranciscoDesktop.jpg')",
         yosemite: "url('../img/yosemite.jpg')",
@@ -35,7 +35,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      width: ["responsive", "hover", "focus"],
+    },
   },
   plugins: [
     require("@tailwindcss/forms"),
