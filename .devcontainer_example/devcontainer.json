@@ -1,0 +1,26 @@
+{
+  "name": "Tailwind App - NodeJs & TypeScript",
+  "dockerComposeFile": "../docker/local/docker-compose.yml",
+  "service": "tailwindapp",
+  "workspaceFolder": "/home/node/app",
+  "runServices": ["tailwindapp"],
+  "customizations": {
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "vscode": {
+      "extensions": [
+        "VisualStudioExptTeam.vscodeintellicode",
+        "eamodio.gitlens",
+        "vscode-icons-team.vscode-icons",
+        "shardulm94.trailing-spaces",
+        "esbenp.prettier-vscode",
+        "oderwat.indent-rainbow",
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig",
+        "bradlc.vscode-tailwindcss",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  }
+}

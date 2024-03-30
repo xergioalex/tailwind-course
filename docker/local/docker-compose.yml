@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  tailwindapp: &tailwindapp
+    build:
+      context: .
+      dockerfile: ./tailwindapp/Dockerfile
+    working_dir: /home/node/app
+    volumes:
+      - ../../:/home/node/app
+    env_file:
+      - tailwindapp/.env
+    ports:
+      - '4200:4200'
+    command:
+      - /bin/sh
+      - -c
+      - |
+        sleep infinity
