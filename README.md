@@ -156,3 +156,17 @@ Este plugin llega a resolver el problema integrando la clase ‘aspect’ que no
 
 # Tailwind como API para la creación de un Design System
 
+# Extracción de componentes a clases para nuestra card
+
+La extracción de componentes sirve para no escribir el mismo código en componentes que se utilizarán más de una vez (ej. cards) y poder mantener el principio de utility-first. La extracción de componentes trabaja de la mano con la directiva **@apply**.
+
+Para hacer la extracción de componentes se procede a lo siguiente:
+
+En el archivo src/css/tailwind.css se crean clases cuyo nombre será el adecuado para identificar cierto componente, dentro de la clase se introducirán todos los estilos de Tailwind que se estarán reutilizando haciendo el uso de la directiva @apply seguido de las clases de Tailwind.
+```
+@layer components {
+  .Card {
+    @apply w-48 h-64 shadow-md rounded-lg;
+  }
+}
+```
